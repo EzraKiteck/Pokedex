@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     
     //Base URL for request
-    let pokemonAPIBaseURL = "http://pokeapi.co/api/v2/pokemon/"
+    let pokemonAPIBaseURL = "https://pokeapi.co/api/v2/pokemon/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +36,20 @@ class ViewController: UIViewController {
         //Clears text field
         pokemonNameTextField.text = ""
         
-        print(pokemonName)
+        //Replaces any spaces with plus signs for URL usage
+        let pokemonNameURL = pokemonName.replacingOccurrences(of: " ", with: "+")
         
         //Building our complete request URL with pokemon
-        let requestURL = pokemonAPIBaseURL + pokemonName
+        let requestURL = pokemonAPIBaseURL + pokemonNameURL
         
         Alamofire.request(requestURL).responseJSON { (response) in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print("Success")
+                //To print all json, use String(describing: json)
+                self.descriptionTextView.text = "Name: \(json["name"])\nID: \(json["id"])"
             case.failure(let error):
+                self.descriptionTextView.text = "Invalid selection enetered or an error occured.  Please try again."
                 print(error.localizedDescription)
             }
         }

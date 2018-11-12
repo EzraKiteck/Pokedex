@@ -25,12 +25,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gi-M9-4PZ">
-                                <rect key="frame" x="155" y="153" width="65" height="30"/>
+                                <rect key="frame" x="155" y="119" width="65" height="30"/>
                                 <color key="backgroundColor" red="0.83529411760000005" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="3tB-eN-ZIC"/>
                                 </constraints>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Search">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -42,18 +42,14 @@
                                     <action selector="submitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DqD-Kc-1Xb"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-SQ-G6F">
-                                <rect key="frame" x="0.0" y="243" width="375" height="424"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter the name or ID number of a Pokemon" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-SQ-G6F">
+                                <rect key="frame" x="0.0" y="209" width="375" height="458"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name or ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vas-LB-Azr">
-                                <rect key="frame" x="87.5" y="73" width="200" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="wK4-ft-axz"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="73" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -61,12 +57,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vas-LB-Azr" secondAttribute="trailing" constant="16" id="0Jp-ZR-EU5"/>
                             <constraint firstItem="K3l-Pn-kTy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="4Bu-tj-R2J"/>
                             <constraint firstItem="tBd-SQ-G6F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4bB-yp-UYn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tBd-SQ-G6F" secondAttribute="bottom" id="68i-sX-t9B"/>
                             <constraint firstItem="vas-LB-Azr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OTq-z6-ydq"/>
                             <constraint firstItem="K3l-Pn-kTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USu-TP-98p"/>
-                            <constraint firstItem="3Gi-M9-4PZ" firstAttribute="top" secondItem="vas-LB-Azr" secondAttribute="bottom" constant="50" id="XfO-vD-kOT"/>
+                            <constraint firstItem="3Gi-M9-4PZ" firstAttribute="top" secondItem="vas-LB-Azr" secondAttribute="bottom" constant="16" id="XfO-vD-kOT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tBd-SQ-G6F" secondAttribute="trailing" id="Y4K-GS-RfB"/>
                             <constraint firstItem="vas-LB-Azr" firstAttribute="top" secondItem="K3l-Pn-kTy" secondAttribute="bottom" constant="16" id="nuu-kI-oeA"/>
                             <constraint firstItem="3Gi-M9-4PZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sRO-FP-iSj"/>
