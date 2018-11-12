@@ -16,10 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var pokemonNameTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    var pokemonName = ""
-    
     //Base URL for request
-    let pokemonAPIBaseURL = "http://pokeapi.co/api/v2/item/"
+    let pokemonAPIBaseURL = "http://pokeapi.co/api/v2/pokemon/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,17 +29,27 @@ class ViewController: UIViewController {
         pokemonNameTextField.resignFirstResponder()
         
         //Checks against the Pokemon name being nil
-        if pokemonNameTextField.text != nil || Int(pokemonNameTextField.text!) != nil {
-            pokemonName = pokemonNameTextField.text!
-        }  else {
-            print("Please fill all text fields.")
-            return
+        guard let pokemonName = pokemonNameTextField.text else {
+                return
         }
         
         //Clears text field
         pokemonNameTextField.text = ""
         
         print(pokemonName)
+        
+        //Building our complete request URL with pokemon
+        let requestURL = pokemonAPIBaseURL + pokemonName
+        
+        Alamofire.request(requestURL).responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print("Success")
+            case.failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
 
