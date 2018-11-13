@@ -57,7 +57,8 @@ class ViewController: UIViewController {
                 self.pokemonImageView.sd_setImage(with: URL(string: self.imageAPIBaseURL + "\(json["id"])" + ".png"), completed: nil)
             case.failure(let error):
                 //Displays an error if it fails
-                self.descriptionTextView.text = "Invalid selection enetered or an error occured.  Please try again."
+                self.pokemonImageView.setimage
+                self.descriptionTextView.text = "Pokemon not found!"
                 print(error.localizedDescription)
             }
         }
