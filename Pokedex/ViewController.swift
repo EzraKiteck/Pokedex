@@ -45,17 +45,18 @@ class ViewController: UIViewController {
         //Building our complete request URL with pokemon
         let requestURL = pokemonAPIBaseURL + pokemonNameURL
         
-        
+        //The Alamofire thread that gets the info of the pokemon via the PokeAPI
         Alamofire.request(requestURL).responseJSON { (response) in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
                 //To print all json, use String(describing: json)
+                //Displays the name and ID of the pokemon
                 self.descriptionTextView.text = "Name: \(json["name"])\nID: \(json["id"])"
+                //Uses the base URL + the pokemons ID# + .png to get and display the default sprite
                 self.pokemonImageView.sd_setImage(with: URL(string: self.imageAPIBaseURL + "\(json["id"])" + ".png"), completed: nil)
-                print("Finished")
-                
             case.failure(let error):
+                //Displays an error if it fails
                 self.descriptionTextView.text = "Invalid selection enetered or an error occured.  Please try again."
                 print(error.localizedDescription)
             }
