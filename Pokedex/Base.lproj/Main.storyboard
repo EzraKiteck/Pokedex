@@ -82,6 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="descriptionTextView" destination="tBd-SQ-G6F" id="aRO-Jl-Dg5"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="qTV-34-nbE"/>
                         <outlet property="pokemonImageView" destination="Qhq-Kr-4zQ" id="4ie-kZ-aN4"/>
                         <outlet property="pokemonNameTextField" destination="vas-LB-Azr" id="NNq-cu-swc"/>
                     </connections>
