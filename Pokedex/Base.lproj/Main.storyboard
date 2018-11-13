@@ -43,11 +43,18 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter the name or ID number of a Pokemon" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-SQ-G6F">
-                                <rect key="frame" x="0.0" y="209" width="375" height="458"/>
+                                <rect key="frame" x="0.0" y="331" width="375" height="336"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qhq-Kr-4zQ">
+                                <rect key="frame" x="112.5" y="165" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="8Oi-ed-yhP"/>
+                                    <constraint firstAttribute="height" constant="150" id="GtD-cW-mAe"/>
+                                </constraints>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name or ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vas-LB-Azr">
                                 <rect key="frame" x="16" y="73" width="343" height="30"/>
                                 <nil key="textColor"/>
@@ -59,25 +66,29 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vas-LB-Azr" secondAttribute="trailing" constant="16" id="0Jp-ZR-EU5"/>
                             <constraint firstItem="K3l-Pn-kTy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="4Bu-tj-R2J"/>
+                            <constraint firstItem="tBd-SQ-G6F" firstAttribute="top" secondItem="Qhq-Kr-4zQ" secondAttribute="bottom" constant="16" id="4QL-bX-IRC"/>
                             <constraint firstItem="tBd-SQ-G6F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4bB-yp-UYn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tBd-SQ-G6F" secondAttribute="bottom" id="68i-sX-t9B"/>
                             <constraint firstItem="vas-LB-Azr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OTq-z6-ydq"/>
+                            <constraint firstItem="Qhq-Kr-4zQ" firstAttribute="top" secondItem="3Gi-M9-4PZ" secondAttribute="bottom" constant="16" id="Sni-fo-7iS"/>
                             <constraint firstItem="K3l-Pn-kTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USu-TP-98p"/>
                             <constraint firstItem="3Gi-M9-4PZ" firstAttribute="top" secondItem="vas-LB-Azr" secondAttribute="bottom" constant="16" id="XfO-vD-kOT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tBd-SQ-G6F" secondAttribute="trailing" id="Y4K-GS-RfB"/>
+                            <constraint firstItem="Qhq-Kr-4zQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edq-E5-38a"/>
                             <constraint firstItem="vas-LB-Azr" firstAttribute="top" secondItem="K3l-Pn-kTy" secondAttribute="bottom" constant="16" id="nuu-kI-oeA"/>
                             <constraint firstItem="3Gi-M9-4PZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sRO-FP-iSj"/>
-                            <constraint firstItem="tBd-SQ-G6F" firstAttribute="top" secondItem="3Gi-M9-4PZ" secondAttribute="bottom" constant="60" id="wh6-m0-8r3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="descriptionTextView" destination="tBd-SQ-G6F" id="aRO-Jl-Dg5"/>
+                        <outlet property="pokemonImageView" destination="Qhq-Kr-4zQ" id="4ie-kZ-aN4"/>
                         <outlet property="pokemonNameTextField" destination="vas-LB-Azr" id="NNq-cu-swc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>

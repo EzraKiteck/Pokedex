@@ -9,15 +9,18 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SDWebImage
 
 class ViewController: UIViewController {
 
     //IB Outlets
     @IBOutlet weak var pokemonNameTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var pokemonImageView: UIImageView!
     
     //Base URL for request
     let pokemonAPIBaseURL = "https://pokeapi.co/api/v2/pokemon/"
+    let imageAPIBaseURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +45,16 @@ class ViewController: UIViewController {
         //Building our complete request URL with pokemon
         let requestURL = pokemonAPIBaseURL + pokemonNameURL
         
+        
         Alamofire.request(requestURL).responseJSON { (response) in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
                 //To print all json, use String(describing: json)
                 self.descriptionTextView.text = "Name: \(json["name"])\nID: \(json["id"])"
+                self.pokemonImageView.sd_setImage(with: URL(string: self.imageAPIBaseURL + "\(json["id"])" + ".png"), completed: nil)
+                print("Finished")
+                
             case.failure(let error):
                 self.descriptionTextView.text = "Invalid selection enetered or an error occured.  Please try again."
                 print(error.localizedDescription)
