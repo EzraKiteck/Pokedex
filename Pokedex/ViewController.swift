@@ -105,28 +105,6 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    enum PokemonType: String {
-        case normal = "normal" //UIColor(red: 168 / 255, green: 167 / 255, blue: 122 / 255, alpha: 1)
-        case fire = "fire" //- UIColor(red: 238 / 255, green: 128 / 255, blue:  59 / 255, alpha: 1)
-        case fighting = "fighting" //- UIColor(red: 190 / 255, green:  49 / 255, blue:  45 / 255, alpha: 1)
-        case water = "water" //- UIColor(red: 106 / 255, green: 146 / 255, blue: 237 / 255, alpha: 1)
-        case flying = "flying" //- UIColor(red: 168 / 255, green: 147 / 255, blue: 237 / 255, alpha: 1)
-        case grass = "grass" //- UIColor(red: 123 / 255, green: 198 / 255, blue:  87 / 255, alpha: 1)
-        case poison = "poison" //- UIColor(red: 159 / 255, green:  68 / 255, blue: 158 / 255, alpha: 1)
-        case electric = "electric" //- UIColor(red: 247 / 255, green: 206 / 255, blue:  67 / 255, alpha: 1)
-        case ground = "ground" //- UIColor(red: 223 / 255, green: 191 / 255, blue: 110 / 255, alpha: 1)
-        case psychic = "psychic" //- UIColor(red: 246 / 255, green:  91 / 255, blue: 137 / 255, alpha: 1)
-        case rock = "rock" //- UIColor(red: 183 / 255, green: 159 / 255, blue:  65 / 255, alpha: 1)
-        case ice = "ice" //- UIColor(red: 154 / 255, green: 216 / 255, blue: 215 / 255, alpha: 1)
-        case bug  = "bug" //- UIColor(red: 168 / 255, green: 182 / 255, blue:  49 / 255, alpha: 1)
-        case dragon = "dragon" //- UIColor(red: 112 / 255, green:  67 / 255, blue: 244 / 255, alpha: 1)
-        case ghost = "ghost" //- UIColor(red: 112 / 255, green:  90 / 255, blue: 150 / 255, alpha: 1)
-        case dark = "dark" //- UIColor(red: 112 / 255, green:  88 / 255, blue:  73 / 255, alpha: 1)
-        case steel = "steel" //- UIColor(red: 184 / 255, green: 184 / 255, blue: 207 / 255, alpha: 1)
-        case fairy = "fairy" //- UIColor(red: 236 / 255, green: 154 / 255, blue: 172 / 255, alpha: 1)
-    }
-    
 
 }
 
