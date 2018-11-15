@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3l-Pn-kTy">
-                                <rect key="frame" x="151.5" y="36" width="72" height="21"/>
+                                <rect key="frame" x="171" y="60" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gi-M9-4PZ">
-                                <rect key="frame" x="155" y="119" width="65" height="30"/>
+                                <rect key="frame" x="174.66666666666666" y="143" width="65" height="30"/>
                                 <color key="backgroundColor" red="0.83529411760000005" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="3tB-eN-ZIC"/>
@@ -43,20 +43,20 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter the name or ID number of a Pokemon" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-SQ-G6F">
-                                <rect key="frame" x="0.0" y="331" width="375" height="336"/>
+                                <rect key="frame" x="0.0" y="355" width="414" height="541"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qhq-Kr-4zQ">
-                                <rect key="frame" x="112.5" y="165" width="150" height="150"/>
+                                <rect key="frame" x="132" y="189" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="8Oi-ed-yhP"/>
                                     <constraint firstAttribute="height" constant="150" id="GtD-cW-mAe"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name or ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vas-LB-Azr">
-                                <rect key="frame" x="16" y="73" width="343" height="30"/>
+                                <rect key="frame" x="16" y="97" width="382" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -68,7 +68,7 @@
                             <constraint firstItem="K3l-Pn-kTy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="4Bu-tj-R2J"/>
                             <constraint firstItem="tBd-SQ-G6F" firstAttribute="top" secondItem="Qhq-Kr-4zQ" secondAttribute="bottom" constant="16" id="4QL-bX-IRC"/>
                             <constraint firstItem="tBd-SQ-G6F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4bB-yp-UYn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tBd-SQ-G6F" secondAttribute="bottom" id="68i-sX-t9B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tBd-SQ-G6F" secondAttribute="bottom" constant="-34" id="68i-sX-t9B"/>
                             <constraint firstItem="vas-LB-Azr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OTq-z6-ydq"/>
                             <constraint firstItem="Qhq-Kr-4zQ" firstAttribute="top" secondItem="3Gi-M9-4PZ" secondAttribute="bottom" constant="16" id="Sni-fo-7iS"/>
                             <constraint firstItem="K3l-Pn-kTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="USu-TP-98p"/>
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152.80000000000001" y="26.53673163418291"/>
+            <point key="canvasLocation" x="152.17391304347828" y="26.116071428571427"/>
         </scene>
     </scenes>
 </document>
