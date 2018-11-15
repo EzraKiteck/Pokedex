@@ -12,6 +12,7 @@
 		7410A4652199DFB600E10494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7410A4632199DFB600E10494 /* Main.storyboard */; };
 		7410A4672199DFB800E10494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7410A4662199DFB800E10494 /* Assets.xcassets */; };
 		7410A46A2199DFB800E10494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7410A4682199DFB800E10494 /* LaunchScreen.storyboard */; };
+		7410A49B219DD01A00E10494 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410A49A219DD01A00E10494 /* TableViewController.swift */; };
 		CC03177E4F31E2467D6F0116 /* Pods_Pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4427311D57E5D02773957C2 /* Pods_Pokedex.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		7410A4662199DFB800E10494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7410A4692199DFB800E10494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7410A46B2199DFB800E10494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7410A49A219DD01A00E10494 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E4427311D57E5D02773957C2 /* Pods_Pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 			children = (
 				7410A45F2199DFB600E10494 /* AppDelegate.swift */,
 				7410A4612199DFB600E10494 /* ViewController.swift */,
+				7410A49A219DD01A00E10494 /* TableViewController.swift */,
 				7410A4632199DFB600E10494 /* Main.storyboard */,
 				7410A4662199DFB800E10494 /* Assets.xcassets */,
 				7410A4682199DFB800E10494 /* LaunchScreen.storyboard */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7410A4622199DFB600E10494 /* ViewController.swift in Sources */,
+				7410A49B219DD01A00E10494 /* TableViewController.swift in Sources */,
 				7410A4602199DFB600E10494 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
